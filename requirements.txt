@@ -36,3 +36,11 @@ mkdocs-jupyter                               # Jupyter notebook integration
 mkdocs-git-committers-plugin-2               # Git committers information
 mkdocs-git-revision-date-localized-plugin    # Localized Git revision dates
 mkdocs-git-revision-date-plugin              # Git revision date display
+
+#additional packages
+semantic-kernel[azure]
+autogen
+autogen-agentchat
+autogen-ext[openai]
+autogen-core
+nest_asyncio
