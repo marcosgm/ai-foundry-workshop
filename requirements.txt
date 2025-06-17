@@ -45,3 +45,5 @@ autogen-agentchat
 autogen-ext[openai]
 autogen-core
 nest_asyncio
+opentelemetry-instrumentation-openai-v2
+opentelemetry-instrumentation-langchain
