@@ -39,7 +39,7 @@ mkdocs-git-revision-date-plugin              # Git revision date display
 
 #additional packages
 azure-ai-ml
-semantic-kernel[azure]
+semantic-kernel[azure]==1.26.0
 autogen
 autogen-agentchat
 autogen-ext[openai]
