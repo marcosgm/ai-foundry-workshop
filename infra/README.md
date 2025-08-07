@@ -15,14 +15,14 @@ This directory contains Bicep templates and deployment scripts to automatically 
 **For Windows (PowerShell):**
 ```powershell
 cd infra
-.\deploy.ps1 -EnvironmentName "my-ai-workshop"
+.\deploy.ps1 -EnvironmentName "lab1"
 ```
 
 **For Linux/macOS (Bash):**
 ```bash
 cd infra
 chmod +x deploy.sh
-./deploy.sh --environment "my-ai-workshop"
+./deploy.sh --environment "lab1"
 ```
 
 ### Option 2: Manual Deployment
