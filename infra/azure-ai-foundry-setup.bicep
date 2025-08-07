@@ -87,8 +87,10 @@ module aiModels 'modules/ai-models.bicep' = {
   name: 'ai-models-deployment'
   scope: rg
   params: {
+    aiProjectName: aiFoundryInfra.outputs.aiProjectName
     cognitiveServicesName: aiFoundryInfra.outputs.cognitiveServicesName
     resourceToken: resourceToken
+    location: location
   }
 }
 
@@ -129,4 +131,5 @@ output STORAGE_ACCOUNT_NAME string = aiFoundryInfra.outputs.storageAccountName
 output KEY_VAULT_NAME string = aiFoundryInfra.outputs.keyVaultName
 output APPLICATION_INSIGHTS_NAME string = aiFoundryInfra.outputs.applicationInsightsName
 output MODEL_DEPLOYMENT_NAMES object = aiModels.outputs.modelDeploymentNames
+output OPENAI_CONNECTION_NAME string = aiModels.outputs.openAIConnectionName
 output CONNECTION_NAMES object = connections.outputs.connectionNames
