@@ -50,7 +50,8 @@ resource cognitiveServicesAccount 'Microsoft.CognitiveServices/accounts@2024-10-
   name: cognitiveServicesName
 }
 
-// Deploy models
+// Deploy models sequentially to avoid conflicts
+@batchSize(1)
 resource modelDeployments 'Microsoft.CognitiveServices/accounts/deployments@2024-10-01' = [for model in models: {
   name: model.deploymentName
   parent: cognitiveServicesAccount
