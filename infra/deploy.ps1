@@ -3,7 +3,7 @@
 
 param(
     [string]$EnvironmentName = "ai-foundry-dev",
-    [string]$Location = "canadacentral",
+    [string]$Location = "eastus2",
     [string]$ResourceGroupName = "",
     [switch]$NoBing,
     [string]$SearchServiceSku = "basic",

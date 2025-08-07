@@ -101,6 +101,7 @@ module connections 'modules/ai-connections.bicep' = {
     aiSearchServiceName: aiFoundryInfra.outputs.aiSearchServiceName
     enableBingSearch: enableBingSearch
     resourceToken: resourceToken
+    location: location
   }
 }
 

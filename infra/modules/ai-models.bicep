@@ -8,18 +8,18 @@ param resourceToken string
 // Model deployment configurations
 var models = [
   {
-    name: 'gpt-4o'
-    deploymentName: 'gpt-4o-${resourceToken}'
-    version: '2024-08-06'
+    name: 'gpt-5-mini'
+    deploymentName: 'gpt-5-mini'
+    version: '2025-08-07'
     sku: {
       name: 'GlobalStandard'
       capacity: 150 // Set to max TPM to avoid issues with Agents notebooks
     }
   }
   {
-    name: 'gpt-4o-mini'
-    deploymentName: 'gpt-4o-mini-${resourceToken}'
-    version: '2024-07-18'
+    name: 'gpt-5-nano'
+    deploymentName: 'gpt-5-nano'
+    version: '2025-08-07'
     sku: {
       name: 'GlobalStandard'
       capacity: 150 // Set to max TPM to avoid issues with Agents notebooks

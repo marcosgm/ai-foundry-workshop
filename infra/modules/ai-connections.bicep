@@ -11,6 +11,9 @@ param enableBingSearch bool
 @description('Resource token for unique naming')
 param resourceToken string
 
+@description('Location for the connections')
+param location string
+
 // Reference to the AI Project
 resource aiProject 'Microsoft.MachineLearningServices/workspaces@2024-10-01' existing = {
   name: aiProjectName
@@ -35,6 +38,7 @@ resource aiSearchConnection 'Microsoft.MachineLearningServices/workspaces/connec
     metadata: {
       ApiType: 'Azure'
       ApiVersion: '2023-11-01'
+      Location: location
     }
   }
 }
@@ -53,6 +57,7 @@ resource bingSearchConnection 'Microsoft.MachineLearningServices/workspaces/conn
     metadata: {
       ApiType: 'Bing'
       ApiVersion: 'v7.0'
+      Location: location
     }
   }
 }
