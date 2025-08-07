@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "ai-foundry-dev"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "resourceGroupName": {
+      "value": ""
+    },
+    "userPrincipalId": {
+      "value": "YOUR_USER_PRINCIPAL_ID_HERE"
+    },
+    "tenantId": {
+      "value": "YOUR_TENANT_ID_HERE"
+    },
+    "enableBingSearch": {
+      "value": true
+    },
+    "searchServiceSku": {
+      "value": "basic"
+    },
+    "semanticSearch": {
+      "value": "free"
+    }
+  }
+}
